@@ -8,6 +8,9 @@ body {
 	line-height: 34px;
 	font-family: 'Arial', 'Helvetica New', Helvetica, sans-serif;
 	color: #777;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -45,32 +48,37 @@ h2, h3 {
 header {
 	color: #fff;
 	background: #fff;
-	margin: 0 0 30px;
-	width: 100%
-	max-width: 960px;
+	margin: 0;
+	width: 100%;
 	border-bottom: 1px solid #adaead;
+	position: fixed;
+	z-index: 99;
 	overflow: auto;
+	margin: 0 0 30px;
 }
 
 #name {
-	width: 400px;
 	height: 90px;
 	background: #4aaaa5;
 	float: left;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, "Times New Roman", serif;
  	text-align: center;
  	line-height: 90px;
  	color: #fff;
  	font-weight: 700;
  	font-size: 30px;
  	text-decoration: none;
- 	margin-left: 25px;	
+ 	margin-left: 80px;	
+}
+
+#sidebar {
+	float: right;
+	margin-right: 100px;
 }
 
 nav {
 	float: right;
 	margin-top: 25px;
-	margin-right: 25px;
 }
 
 nav a{
@@ -88,16 +96,17 @@ nav a:first-child {
 }
 
 
-#main-container, #aboutme {
-	padding-top: 30px;
-	width: 650px;
+#main-container {
+	padding-top: 130px;
+	padding-left: 60px;
+	width: 100%;
 	float: left;
 }
 
-#main-section, .portfolio, .main-section, .mastercontact {
+.main-section {
 	background: #fff;
 	padding: 30px;
-	margin: 0 0 40px 0;
+	margin: 0 0 40px 20px;
 	width: 100%;
 	max-width: 650px;
 	float: left;
@@ -122,18 +131,18 @@ nav a:first-child {
 	clear: both;
 }
 
-#connectlink {
-	background: #fff;
-	padding: 30px;
-	max-width: 350px;
+.links {
 	float: right;
-	position: relative;
-	clear: both;
-	border: 1px solid #adaead;
+	width: 100%;
+	max-width: 270px;
+	padding: 30px;
 	margin-bottom: 20px;
+	margin-right: 100px;
+	background: #fff;
+	border: 1px solid #ddd;
 }
 
-h3, #connectlink, h2 {
+h3, .links, h2 {
 	border-bottom: 1px solid #adaead;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
@@ -141,13 +150,13 @@ h3, #connectlink, h2 {
 }
 
 
-}
 
 .soc {
-	width: 62px;
-	height: 62px;
-	margin-top: 5px;
-	margin-right: 0px;
+	width: 64px;
+	height: 64px;
+	margin-top: 8px;
+	margin-right: 5px;
+	display: inline-block;
 }
 
 .soc:last-child {
@@ -179,7 +188,7 @@ footer {
 }
 
 .work img {
-	width: 100%
+	width: 100%;
 	border: 0 none;
 	opacity: .8;
 }
@@ -200,14 +209,10 @@ footer {
 
 #ContactForm ul {
 	margin-bottom: 20px;
-	width: 650px;
-	float: left;
 }
 
 #ContactForm li {
 	margin-bottom: 10px;
-	width: 650px;
-	float: left;
 }
 
 label,
@@ -215,7 +220,7 @@ input[type=text],
 input[type=email],
 textarea {
 	display: block;
-	width: 80%;
+	width: 100%;
 }
 
 input[type=text]
